@@ -1,0 +1,5172 @@
+[
+    {
+        "id": "8c936e03243ea0ce",
+        "type": "tab",
+        "label": "Sensores - Wifi",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "14d915fa5815135c",
+        "type": "tab",
+        "label": "Sensores - LoRa",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1d5e683674f1d168",
+        "type": "tab",
+        "label": "Dataset",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1f875c7aa841dc6b",
+        "type": "tab",
+        "label": "Random Forest (SBrT)",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "57949d988172fdbe",
+        "type": "tab",
+        "label": "Support vector classifier",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1348cbf13aa9875a",
+        "type": "tab",
+        "label": "K Nearest Neighbors (SBrT)",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e3e0b84481bac127",
+        "type": "tab",
+        "label": "Isolation Forest (Sensors)",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a9377ce16a5678ab",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "aa6b94e454fb47de",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "cb216faf.d9136",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "iot.eclipse.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "5c3a4e27.a99f9",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.203",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "3377c30a0380ce1b",
+        "type": "influxdb",
+        "hostname": "192.168.0.103",
+        "port": "8086",
+        "protocol": "http",
+        "database": "AGROFTHINGS",
+        "name": "Cloud",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "https://europe-west1-1.gcp.cloud2.influxdata.com/",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "373fa459.54e07c",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "WEATHER",
+        "name": "Weather",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x"
+    },
+    {
+        "id": "4f358395cec364af",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "54176745dbd55eb8",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d4ed03d4a447a4c1",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c6d86de63e4dc7da",
+        "type": "ui_group",
+        "name": "Sensor node 01",
+        "tab": "54176745dbd55eb8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9ab98a7d7594da1e",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "54176745dbd55eb8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3f0a57f5be7632dd",
+        "type": "ui_group",
+        "name": "Sensor node 02",
+        "tab": "54176745dbd55eb8",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1eb06c4958314cc9",
+        "type": "mqtt in",
+        "z": "8c936e03243ea0ce",
+        "name": "",
+        "topic": "esp1/dht/temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "4112948624b1ea22"
+            ]
+        ]
+    },
+    {
+        "id": "967e89fa8844aa3d",
+        "type": "mqtt in",
+        "z": "8c936e03243ea0ce",
+        "name": "",
+        "topic": "esp1/dht/umidade",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 220,
+        "wires": [
+            [
+                "4112948624b1ea22"
+            ]
+        ]
+    },
+    {
+        "id": "a479431d3ce295b3",
+        "type": "mqtt in",
+        "z": "8c936e03243ea0ce",
+        "name": "",
+        "topic": "esp1/higro/umidade",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 280,
+        "wires": [
+            [
+                "4112948624b1ea22"
+            ]
+        ]
+    },
+    {
+        "id": "4112948624b1ea22",
+        "type": "function",
+        "z": "8c936e03243ea0ce",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 220,
+        "wires": [
+            [
+                "97bbe30f5534fba6"
+            ]
+        ]
+    },
+    {
+        "id": "49abb93568ad9d20",
+        "type": "mqtt in",
+        "z": "8c936e03243ea0ce",
+        "name": "",
+        "topic": "esp2/dht/temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 420,
+        "wires": [
+            [
+                "890381dcad2df80b"
+            ]
+        ]
+    },
+    {
+        "id": "19beda033111a171",
+        "type": "mqtt in",
+        "z": "8c936e03243ea0ce",
+        "name": "",
+        "topic": "esp2/dht/umidade",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 480,
+        "wires": [
+            [
+                "890381dcad2df80b"
+            ]
+        ]
+    },
+    {
+        "id": "bc629ce00e5e4be2",
+        "type": "mqtt in",
+        "z": "8c936e03243ea0ce",
+        "name": "",
+        "topic": "esp2/higro/umidade",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 540,
+        "wires": [
+            [
+                "890381dcad2df80b"
+            ]
+        ]
+    },
+    {
+        "id": "890381dcad2df80b",
+        "type": "function",
+        "z": "8c936e03243ea0ce",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 480,
+        "wires": [
+            [
+                "434061f51df1dbe6"
+            ]
+        ]
+    },
+    {
+        "id": "97bbe30f5534fba6",
+        "type": "join",
+        "z": "8c936e03243ea0ce",
+        "name": "esp_01_values",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 680,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "434061f51df1dbe6",
+        "type": "join",
+        "z": "8c936e03243ea0ce",
+        "name": "esp_02_values",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 680,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a601a282ee1f3a43",
+        "type": "mqtt in",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "topic": "topic/node1/temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "a963f1e878f825e1",
+                "32ead3a02fc06338",
+                "b26c79f5713d9c85",
+                "0eef6afe87fb1b9f"
+            ]
+        ]
+    },
+    {
+        "id": "6913ea96df925ce7",
+        "type": "mqtt in",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "topic": "topic/node1/umidade_ambiente",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "d18907d033d35249",
+                "32ead3a02fc06338",
+                "b26c79f5713d9c85",
+                "4531632f5d9e15cd"
+            ]
+        ]
+    },
+    {
+        "id": "a963f1e878f825e1",
+        "type": "function",
+        "z": "14d915fa5815135c",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 240,
+        "wires": [
+            [
+                "a65c391b72c66c20"
+            ]
+        ]
+    },
+    {
+        "id": "c67b411095494eb8",
+        "type": "mqtt in",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "topic": "topic/node2/temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 660,
+        "wires": [
+            [
+                "cbb13d3270dd1e2a",
+                "a7a2ed300cd62181",
+                "05e7b2284922b897"
+            ]
+        ]
+    },
+    {
+        "id": "358ff747534b8b36",
+        "type": "mqtt in",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "topic": "topic/node2/umidade_ambiente",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 720,
+        "wires": [
+            [
+                "1c6f22e4568714d3",
+                "de0dc446108ee517",
+                "a7a2ed300cd62181"
+            ]
+        ]
+    },
+    {
+        "id": "cbb13d3270dd1e2a",
+        "type": "function",
+        "z": "14d915fa5815135c",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 680,
+        "wires": [
+            [
+                "98842a31758bfd52"
+            ]
+        ]
+    },
+    {
+        "id": "d18907d033d35249",
+        "type": "function",
+        "z": "14d915fa5815135c",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 320,
+        "wires": [
+            [
+                "877c5042178720ab"
+            ]
+        ]
+    },
+    {
+        "id": "877c5042178720ab",
+        "type": "influxdb out",
+        "z": "14d915fa5815135c",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02hum_cloud",
+        "measurement": "node01_hum",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 750,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "98842a31758bfd52",
+        "type": "influxdb out",
+        "z": "14d915fa5815135c",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02temp_cloud",
+        "measurement": "node02_temp",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 750,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "d5d9315be48ced0e",
+        "type": "influxdb out",
+        "z": "14d915fa5815135c",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02hum_cloud",
+        "measurement": "node02_hum",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 750,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "1c6f22e4568714d3",
+        "type": "function",
+        "z": "14d915fa5815135c",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 760,
+        "wires": [
+            [
+                "d5d9315be48ced0e"
+            ]
+        ]
+    },
+    {
+        "id": "a65c391b72c66c20",
+        "type": "influxdb out",
+        "z": "14d915fa5815135c",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node01temp_cloud",
+        "measurement": "node01_temp",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 750,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5fd52240e97ebaeb",
+        "type": "openweathermap in",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "wtype": "current",
+        "lon": "-45.7981",
+        "lat": "-22.4131",
+        "city": "",
+        "country": "",
+        "language": "pt",
+        "x": 460,
+        "y": 80,
+        "wires": [
+            [
+                "96b1cb25adf8ec60",
+                "4a071a18a2adea75"
+            ]
+        ]
+    },
+    {
+        "id": "96b1cb25adf8ec60",
+        "type": "influxdb out",
+        "z": "14d915fa5815135c",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "weather_cloud",
+        "measurement": "weather",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 700,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "dc92b5f8a80cd85e",
+        "type": "mqtt in",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "topic": "topic/node1/sensacao_termica",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "cc822f943ea40ba7",
+                "32ead3a02fc06338",
+                "b26c79f5713d9c85",
+                "c9ba326a2fd375b4"
+            ]
+        ]
+    },
+    {
+        "id": "cc822f943ea40ba7",
+        "type": "function",
+        "z": "14d915fa5815135c",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "568b462b68037037"
+            ]
+        ]
+    },
+    {
+        "id": "568b462b68037037",
+        "type": "influxdb out",
+        "z": "14d915fa5815135c",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02hum_cloud",
+        "measurement": "node01_sen",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 750,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "16620668a1354a7e",
+        "type": "mqtt in",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "topic": "topic/node2/sensacao_termica",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 780,
+        "wires": [
+            [
+                "d1a37d7fe8a9cc11",
+                "fd9037a135174211",
+                "a7a2ed300cd62181"
+            ]
+        ]
+    },
+    {
+        "id": "d1a37d7fe8a9cc11",
+        "type": "function",
+        "z": "14d915fa5815135c",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 840,
+        "wires": [
+            [
+                "bed4400c764007e8"
+            ]
+        ]
+    },
+    {
+        "id": "bed4400c764007e8",
+        "type": "influxdb out",
+        "z": "14d915fa5815135c",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02hum_cloud",
+        "measurement": "node02_sen",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 750,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "dbb4709c5f67fe4c",
+        "type": "mqtt in",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "topic": "topic/node1/umidade_solo",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "05598b59e8924a35",
+                "32ead3a02fc06338",
+                "b26c79f5713d9c85",
+                "9fc78f6c0cfd0079"
+            ]
+        ]
+    },
+    {
+        "id": "05598b59e8924a35",
+        "type": "function",
+        "z": "14d915fa5815135c",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 480,
+        "wires": [
+            [
+                "1ff88d151f338a30"
+            ]
+        ]
+    },
+    {
+        "id": "1ff88d151f338a30",
+        "type": "influxdb out",
+        "z": "14d915fa5815135c",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02hum_cloud",
+        "measurement": "node01_soil",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 750,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "56b2c2b366858f7d",
+        "type": "mqtt in",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "topic": "topic/node2/umidade_solo",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 840,
+        "wires": [
+            [
+                "6d23c05e2b0349d6",
+                "a3b4f668c4ac623f",
+                "a7a2ed300cd62181"
+            ]
+        ]
+    },
+    {
+        "id": "6d23c05e2b0349d6",
+        "type": "function",
+        "z": "14d915fa5815135c",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 920,
+        "wires": [
+            [
+                "4c7c68fa434fda4e"
+            ]
+        ]
+    },
+    {
+        "id": "4c7c68fa434fda4e",
+        "type": "influxdb out",
+        "z": "14d915fa5815135c",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02soil_cloud",
+        "measurement": "node02_soil",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 750,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "32ead3a02fc06338",
+        "type": "debug",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "4a071a18a2adea75",
+        "type": "debug",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b26c79f5713d9c85",
+        "type": "ui_chart",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "group": "c6d86de63e4dc7da",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Metrics",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 440,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0eef6afe87fb1b9f",
+        "type": "ui_gauge",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "group": "c6d86de63e4dc7da",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Environment temperature",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#ff0000",
+            "#2bff00",
+            "#ff0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 490,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "4531632f5d9e15cd",
+        "type": "ui_gauge",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "group": "c6d86de63e4dc7da",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Environment humdity",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ff0000",
+            "#04e600",
+            "#ff0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 480,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c9ba326a2fd375b4",
+        "type": "ui_gauge",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "group": "c6d86de63e4dc7da",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Thermal sensation",
+        "label": "ºC",
+        "format": "",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#ff0000",
+            "#1be600",
+            "#ff0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 470,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "9fc78f6c0cfd0079",
+        "type": "ui_gauge",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "group": "c6d86de63e4dc7da",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Soil humidity",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ff4d00",
+            "#00e61b",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 450,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "a3b4f668c4ac623f",
+        "type": "ui_gauge",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "group": "3f0a57f5be7632dd",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Soil humidity",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ff4d00",
+            "#00e61b",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 450,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "fd9037a135174211",
+        "type": "ui_gauge",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "group": "3f0a57f5be7632dd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Thermal sensation",
+        "label": "ºC",
+        "format": "",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#ff0000",
+            "#1be600",
+            "#ff0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 470,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "de0dc446108ee517",
+        "type": "ui_gauge",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "group": "3f0a57f5be7632dd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Environment humdity",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ff0000",
+            "#04e600",
+            "#ff0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 480,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "05e7b2284922b897",
+        "type": "ui_gauge",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "group": "3f0a57f5be7632dd",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Environment temperature",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#ff0000",
+            "#2bff00",
+            "#ff0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 490,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "a7a2ed300cd62181",
+        "type": "ui_chart",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "group": "3f0a57f5be7632dd",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Metrics",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 440,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96619c1e2b652a5d",
+        "type": "debug",
+        "z": "14d915fa5815135c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "9cccd8025e998972",
+        "type": "json",
+        "z": "1d5e683674f1d168",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "43c65b513cdfe206"
+            ]
+        ]
+    },
+    {
+        "id": "43c65b513cdfe206",
+        "type": "function",
+        "z": "1d5e683674f1d168",
+        "name": "Timestamp",
+        "func": "if(msg.payload.temperature > 13 && msg.payload.temperatura < 26 && \n   msg.payload.humidity > 50 && msg.payload.humidity < 70){\n    msg.payload.data.ind=\"good\";\n    msg.payload.data.ind2=1;\n}else{\n    msg.payload.data.ind=\"bad\";\n    msg.payload.data.ind2=0;\n}\n\nmsg.payload.data.date = new Date();\nmsg.payload = msg.payload.data;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "7c7b15c3e82c2ee0",
+                "4cea133417161b8e"
+            ]
+        ]
+    },
+    {
+        "id": "4cea133417161b8e",
+        "type": "debug",
+        "z": "1d5e683674f1d168",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "7c7b15c3e82c2ee0",
+        "type": "csv",
+        "z": "1d5e683674f1d168",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "humidity, temperature, heatindex, ind2",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "4d1a934e86f8022e"
+            ]
+        ]
+    },
+    {
+        "id": "4d1a934e86f8022e",
+        "type": "file",
+        "z": "1d5e683674f1d168",
+        "name": "export",
+        "filename": "/home/pi/Desktop/Mestrado_Inatel/dataset.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 170,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b542187d575bc00f",
+        "type": "inject",
+        "z": "1d5e683674f1d168",
+        "name": "Criar dataset",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 590,
+        "y": 120,
+        "wires": [
+            [
+                "8fbe725acc10aa90"
+            ]
+        ]
+    },
+    {
+        "id": "8fbe725acc10aa90",
+        "type": "create dataset",
+        "z": "1d5e683674f1d168",
+        "name": "dataset",
+        "path": "/home/pi/Desktop/Mestrado_Inatel/dataset.csv",
+        "saveFolder": "/home/pi/Desktop/Mestrado_Inatel",
+        "saveName": "data",
+        "input": "0,1,2",
+        "output": "3",
+        "trainingPartition": "",
+        "shuffle": true,
+        "seed": "",
+        "x": 560,
+        "y": 180,
+        "wires": [
+            [
+                "098d5acafc608467"
+            ]
+        ]
+    },
+    {
+        "id": "098d5acafc608467",
+        "type": "debug",
+        "z": "1d5e683674f1d168",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5245fc369b7af589",
+        "type": "mqtt in",
+        "z": "1d5e683674f1d168",
+        "name": "",
+        "topic": "topic/node1/json",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "9cccd8025e998972"
+            ]
+        ]
+    },
+    {
+        "id": "3531c173b35caaf8",
+        "type": "inject",
+        "z": "1f875c7aa841dc6b",
+        "name": "Treinar modelo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "48000ef8bb541646"
+            ]
+        ]
+    },
+    {
+        "id": "48000ef8bb541646",
+        "type": "load dataset",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "datasetFolder": "/home/pi/Desktop/Mestrado_Inatel",
+        "datasetName": "data",
+        "partition": "train.csv",
+        "input": true,
+        "output": true,
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "4aa1193ca3ef1484"
+            ],
+            [
+                "c6e9ee58f90bc988"
+            ]
+        ]
+    },
+    {
+        "id": "9863839ef834fb70",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "572dd23d6e4910f7",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c6e9ee58f90bc988",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "23e4f5d1bb342fcc",
+        "type": "load dataset",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "datasetFolder": "/home/pi/Desktop/Mestrado_Inatel",
+        "datasetName": "data",
+        "partition": "test.csv",
+        "input": true,
+        "output": false,
+        "x": 670,
+        "y": 140,
+        "wires": [
+            [
+                "f1e4a9cf41d14abb"
+            ],
+            [
+                "1508202b4243afc7"
+            ]
+        ]
+    },
+    {
+        "id": "f1e4a9cf41d14abb",
+        "type": "assessment",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "score": "accuracy_score",
+        "x": 890,
+        "y": 120,
+        "wires": [
+            [
+                "abbe720715c0aad7"
+            ],
+            [
+                "9c05287e61ce7f12"
+            ]
+        ]
+    },
+    {
+        "id": "a3d4736fb42e87b3",
+        "type": "predictor",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "modelPath": "/home/pi/Desktop/Mestrado_Inatel/models",
+        "modelName": "dtc2",
+        "x": 880,
+        "y": 280,
+        "wires": [
+            [
+                "2f4b45d3b804f9c5"
+            ],
+            [
+                "30c9396172a8f12a",
+                "6c21e5895aaeec72"
+            ]
+        ]
+    },
+    {
+        "id": "89fac722fc4914c0",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6c21e5895aaeec72",
+        "type": "assessment",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "score": "cohen_kappa_score",
+        "x": 1070,
+        "y": 260,
+        "wires": [
+            [
+                "caf1070bb5daf0ed"
+            ],
+            [
+                "afd1c4bdd6d8e295"
+            ]
+        ]
+    },
+    {
+        "id": "30c9396172a8f12a",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9c05287e61ce7f12",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "abbe720715c0aad7",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "1508202b4243afc7",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "afd1c4bdd6d8e295",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "caf1070bb5daf0ed",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2f4b45d3b804f9c5",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "95025517cd18f3bb",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "15cb1b2762defdf8",
+        "type": "load dataset",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "datasetFolder": "/home/pi/Desktop/Mestrado_Inatel",
+        "datasetName": "data",
+        "partition": "test.csv",
+        "input": true,
+        "output": false,
+        "x": 670,
+        "y": 300,
+        "wires": [
+            [
+                "a3d4736fb42e87b3",
+                "95025517cd18f3bb"
+            ],
+            [
+                "89fac722fc4914c0"
+            ]
+        ]
+    },
+    {
+        "id": "49d35f5e94fe9161",
+        "type": "inject",
+        "z": "1f875c7aa841dc6b",
+        "name": "Testar modelo",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 650,
+        "y": 220,
+        "wires": [
+            [
+                "15cb1b2762defdf8",
+                "23e4f5d1bb342fcc"
+            ]
+        ]
+    },
+    {
+        "id": "15387baa12aa5af1",
+        "type": "function",
+        "z": "1f875c7aa841dc6b",
+        "name": "Criação do vetor",
+        "func": "msg.payload = [[msg.payload.data.humidity,\n                msg.payload.data.temperature,\n                msg.payload.data.heatindex]]\n                \n\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1180,
+        "wires": [
+            [
+                "7c271c89913551d1",
+                "2fa1bfabfc942c7b"
+            ]
+        ]
+    },
+    {
+        "id": "1fc386ce218f69ad",
+        "type": "json",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 410,
+        "y": 1180,
+        "wires": [
+            [
+                "15387baa12aa5af1"
+            ]
+        ]
+    },
+    {
+        "id": "a20dbd667cb2a82a",
+        "type": "mqtt in",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "topic": "topic/node2/json",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 1180,
+        "wires": [
+            [
+                "1fc386ce218f69ad"
+            ]
+        ]
+    },
+    {
+        "id": "7c271c89913551d1",
+        "type": "predictor",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "modelPath": "/home/pi/Desktop/Mestrado_Inatel/models",
+        "modelName": "dtc",
+        "x": 800,
+        "y": 1180,
+        "wires": [
+            [
+                "e2d8b771ac1dd60b",
+                "9f13282dc87bfcce",
+                "2aebdde00e9c0483"
+            ],
+            [
+                "9ebe033d990e56c6"
+            ]
+        ]
+    },
+    {
+        "id": "e2d8b771ac1dd60b",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "result",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "9ebe033d990e56c6",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "2fa1bfabfc942c7b",
+        "type": "assessment",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "score": "confusion_matrix",
+        "x": 810,
+        "y": 1340,
+        "wires": [
+            [
+                "07c58ae595bdf19a"
+            ],
+            [
+                "fa2df5071830e233"
+            ]
+        ]
+    },
+    {
+        "id": "fa2df5071830e233",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "07c58ae595bdf19a",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "print",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "9f13282dc87bfcce",
+        "type": "link out",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "links": [
+            "b63b731df45bfcd9",
+            "bc6e7c7c7dd8722d"
+        ],
+        "x": 955,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "b63b731df45bfcd9",
+        "type": "link in",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "links": [
+            "9f13282dc87bfcce"
+        ],
+        "x": 655,
+        "y": 1340,
+        "wires": [
+            [
+                "2fa1bfabfc942c7b",
+                "1ee156bc91b0973a"
+            ]
+        ]
+    },
+    {
+        "id": "1ee156bc91b0973a",
+        "type": "function",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "func": "if(msg.payload == 0){\n    msg.payload.ind=\"Condições não favoráveis\";\n}else{\n    msg.payload.ind=\"Condições favoráveis\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 1480,
+        "wires": [
+            [
+                "f68403c4ffd64ed3"
+            ]
+        ]
+    },
+    {
+        "id": "f68403c4ffd64ed3",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "print",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.ind",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "bc6e7c7c7dd8722d",
+        "type": "link in",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "links": [
+            "9f13282dc87bfcce"
+        ],
+        "x": 655,
+        "y": 1540,
+        "wires": [
+            [
+                "112ae06703f57581"
+            ]
+        ]
+    },
+    {
+        "id": "112ae06703f57581",
+        "type": "function",
+        "z": "1f875c7aa841dc6b",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1540,
+        "wires": [
+            [
+                "f51dd06f67683db5",
+                "66e5d6fd91d0402b"
+            ]
+        ]
+    },
+    {
+        "id": "66e5d6fd91d0402b",
+        "type": "influxdb out",
+        "z": "1f875c7aa841dc6b",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02hum_cloud",
+        "measurement": "node02_cond",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 1070,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "f51dd06f67683db5",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "20dede65665e586d",
+        "type": "inject",
+        "z": "1f875c7aa841dc6b",
+        "name": "Treinar modelo",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 820,
+        "y": 1600,
+        "wires": [
+            [
+                "66e5d6fd91d0402b",
+                "f51dd06f67683db5"
+            ]
+        ]
+    },
+    {
+        "id": "2aebdde00e9c0483",
+        "type": "ui_gauge",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "group": "3f0a57f5be7632dd",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Plantation condition",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b30000",
+            "#e6e600",
+            "#3acb43"
+        ],
+        "seg1": "Ruim",
+        "seg2": "Bom",
+        "className": "",
+        "x": 1030,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "580c36ea47a2132c",
+        "type": "assessment",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "score": "cohen_kappa_score",
+        "x": 1130,
+        "y": 480,
+        "wires": [
+            [
+                "7752b24c5f14aaa2"
+            ],
+            [
+                "a7c9ec52b7796f66"
+            ]
+        ]
+    },
+    {
+        "id": "a7c9ec52b7796f66",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "7752b24c5f14aaa2",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "daf27c728bf9c872",
+        "type": "inject",
+        "z": "1f875c7aa841dc6b",
+        "name": "Testar modelo",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[86.00,26.00,27.89,0]",
+        "payloadType": "json",
+        "x": 950,
+        "y": 480,
+        "wires": [
+            [
+                "580c36ea47a2132c"
+            ]
+        ]
+    },
+    {
+        "id": "7ab9e9ed.d514b8",
+        "type": "range",
+        "z": "1f875c7aa841dc6b",
+        "minin": "0",
+        "maxin": "10",
+        "minout": "0",
+        "maxout": "10",
+        "action": "scale",
+        "round": true,
+        "property": "payload",
+        "name": "Round value",
+        "x": 1470,
+        "y": 780,
+        "wires": [
+            [
+                "f26660ab.007b3"
+            ]
+        ]
+    },
+    {
+        "id": "f26660ab.007b3",
+        "type": "join",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "mode": "auto",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 1610,
+        "y": 780,
+        "wires": [
+            [
+                "f9b5abac.f13828"
+            ]
+        ]
+    },
+    {
+        "id": "f9b5abac.f13828",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1670,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "7b989a765403833a",
+        "type": "function",
+        "z": "1f875c7aa841dc6b",
+        "name": "Criação do vetor",
+        "func": "msg.payload = [[msg.payload.data.humidity,\n                msg.payload.data.temperature,\n                msg.payload.data.heatindex]]\n                \n\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 600,
+        "wires": [
+            [
+                "a4879664af2331f9",
+                "c1d3845369dbbc9d"
+            ]
+        ]
+    },
+    {
+        "id": "15680385949a4fd1",
+        "type": "json",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 350,
+        "y": 600,
+        "wires": [
+            [
+                "7b989a765403833a"
+            ]
+        ]
+    },
+    {
+        "id": "7f96ae31e3bd4bdc",
+        "type": "mqtt in",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "topic": "topic/node1/json",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 600,
+        "wires": [
+            [
+                "15680385949a4fd1"
+            ]
+        ]
+    },
+    {
+        "id": "a4879664af2331f9",
+        "type": "predictor",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "modelPath": "/home/pi/Desktop/Mestrado_Inatel/models",
+        "modelName": "dtc2",
+        "x": 740,
+        "y": 600,
+        "wires": [
+            [
+                "93294f4e5f22b3fd",
+                "078c4f435efeb1e4",
+                "bf2b3783fa5cb7a6"
+            ],
+            [
+                "d50911559ac5db53"
+            ]
+        ]
+    },
+    {
+        "id": "93294f4e5f22b3fd",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "result",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "d50911559ac5db53",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c1d3845369dbbc9d",
+        "type": "assessment",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "score": "confusion_matrix",
+        "x": 750,
+        "y": 760,
+        "wires": [
+            [
+                "d42f6d2547b59b13"
+            ],
+            [
+                "040b259387cdc9ed"
+            ]
+        ]
+    },
+    {
+        "id": "040b259387cdc9ed",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "d42f6d2547b59b13",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "078c4f435efeb1e4",
+        "type": "link out",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "links": [
+            "e301884dfc7c7a69",
+            "8d509f50c824995f"
+        ],
+        "x": 895,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "e301884dfc7c7a69",
+        "type": "link in",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "links": [
+            "078c4f435efeb1e4"
+        ],
+        "x": 595,
+        "y": 760,
+        "wires": [
+            [
+                "c1d3845369dbbc9d",
+                "d72d9220381b1d8b"
+            ]
+        ]
+    },
+    {
+        "id": "d72d9220381b1d8b",
+        "type": "function",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "func": "if(msg.payload == 0){\n    msg.payload.ind=\"Condições não favoráveis\";\n}else{\n    msg.payload.ind=\"Condições favoráveis\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 900,
+        "wires": [
+            [
+                "f38799f918e8bd4c"
+            ]
+        ]
+    },
+    {
+        "id": "f38799f918e8bd4c",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "print",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.ind",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "8d509f50c824995f",
+        "type": "link in",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "links": [
+            "078c4f435efeb1e4"
+        ],
+        "x": 595,
+        "y": 960,
+        "wires": [
+            [
+                "1c2706bd0244f570"
+            ]
+        ]
+    },
+    {
+        "id": "1c2706bd0244f570",
+        "type": "function",
+        "z": "1f875c7aa841dc6b",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 960,
+        "wires": [
+            [
+                "7a65226fdfa10152",
+                "166d253831002233"
+            ]
+        ]
+    },
+    {
+        "id": "166d253831002233",
+        "type": "influxdb out",
+        "z": "1f875c7aa841dc6b",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02hum_cloud",
+        "measurement": "node01_cond",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 1010,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "7a65226fdfa10152",
+        "type": "debug",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "a2ccf080c66b51db",
+        "type": "inject",
+        "z": "1f875c7aa841dc6b",
+        "name": "Treinar modelo",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 760,
+        "y": 1020,
+        "wires": [
+            [
+                "166d253831002233",
+                "7a65226fdfa10152"
+            ]
+        ]
+    },
+    {
+        "id": "bf2b3783fa5cb7a6",
+        "type": "ui_gauge",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "group": "c6d86de63e4dc7da",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Plantation condition",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b30000",
+            "#e6e600",
+            "#3acb43"
+        ],
+        "seg1": "Ruim",
+        "seg2": "Bom",
+        "className": "",
+        "x": 970,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "5883f4181a02a474",
+        "type": "inject",
+        "z": "1f875c7aa841dc6b",
+        "name": "Array of decimals",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[1.67,2.98,3.12,4.99,5.50]",
+        "payloadType": "json",
+        "x": 1180,
+        "y": 720,
+        "wires": [
+            [
+                "493aff407bb17eed"
+            ]
+        ]
+    },
+    {
+        "id": "493aff407bb17eed",
+        "type": "split",
+        "z": "1f875c7aa841dc6b",
+        "name": "Split array",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 1260,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4aa1193ca3ef1484",
+        "type": "random forest classifier",
+        "z": "1f875c7aa841dc6b",
+        "name": "",
+        "savePath": "",
+        "saveName": "",
+        "criterion": "gini",
+        "numTrees": "",
+        "maxDepth": "",
+        "x": 210,
+        "y": 240,
+        "wires": [
+            [
+                "9863839ef834fb70"
+            ],
+            [
+                "572dd23d6e4910f7"
+            ]
+        ]
+    },
+    {
+        "id": "6939a388fe991aa4",
+        "type": "function",
+        "z": "57949d988172fdbe",
+        "name": "Criação do vetor",
+        "func": "msg.payload = [[msg.payload.data.humidity,\n                msg.payload.data.temperature,\n                msg.payload.data.heatindex]]\n                \n\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 140,
+        "wires": [
+            [
+                "5d5d7e7debfe0325",
+                "f30603908fbfabcf"
+            ]
+        ]
+    },
+    {
+        "id": "732ca7d1550238c4",
+        "type": "json",
+        "z": "57949d988172fdbe",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "6939a388fe991aa4"
+            ]
+        ]
+    },
+    {
+        "id": "32c5b41670d58bcf",
+        "type": "mqtt in",
+        "z": "57949d988172fdbe",
+        "name": "",
+        "topic": "topic/node1/json",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "732ca7d1550238c4"
+            ]
+        ]
+    },
+    {
+        "id": "5d5d7e7debfe0325",
+        "type": "predictor",
+        "z": "57949d988172fdbe",
+        "name": "",
+        "modelPath": "/home/pi/Desktop/Mestrado_Inatel/models",
+        "modelName": "clf",
+        "x": 760,
+        "y": 140,
+        "wires": [
+            [
+                "6f858ecd92a6d2f8",
+                "c1a3cc2316ade441",
+                "88b2b72ad308082c"
+            ],
+            [
+                "506b8be920ccf18b"
+            ]
+        ]
+    },
+    {
+        "id": "6f858ecd92a6d2f8",
+        "type": "debug",
+        "z": "57949d988172fdbe",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "506b8be920ccf18b",
+        "type": "debug",
+        "z": "57949d988172fdbe",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f30603908fbfabcf",
+        "type": "assessment",
+        "z": "57949d988172fdbe",
+        "name": "",
+        "score": "confusion_matrix",
+        "x": 770,
+        "y": 300,
+        "wires": [
+            [
+                "6061163c63a5c694"
+            ],
+            [
+                "c2a77986df03a610"
+            ]
+        ]
+    },
+    {
+        "id": "c2a77986df03a610",
+        "type": "debug",
+        "z": "57949d988172fdbe",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6061163c63a5c694",
+        "type": "debug",
+        "z": "57949d988172fdbe",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c1a3cc2316ade441",
+        "type": "link out",
+        "z": "57949d988172fdbe",
+        "name": "",
+        "links": [
+            "888b8706eed7ae74",
+            "9ee2d0cc49adce20"
+        ],
+        "x": 915,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "888b8706eed7ae74",
+        "type": "link in",
+        "z": "57949d988172fdbe",
+        "name": "",
+        "links": [
+            "c1a3cc2316ade441"
+        ],
+        "x": 615,
+        "y": 300,
+        "wires": [
+            [
+                "f30603908fbfabcf",
+                "44183756103f9ff8"
+            ]
+        ]
+    },
+    {
+        "id": "44183756103f9ff8",
+        "type": "function",
+        "z": "57949d988172fdbe",
+        "name": "",
+        "func": "if(msg.payload == 0){\n    msg.payload.ind=\"Condições não favoráveis\";\n}else{\n    msg.payload.ind=\"Condições favoráveis\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 440,
+        "wires": [
+            [
+                "020a2ec30c4247d8"
+            ]
+        ]
+    },
+    {
+        "id": "020a2ec30c4247d8",
+        "type": "debug",
+        "z": "57949d988172fdbe",
+        "name": "print",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.ind",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "9ee2d0cc49adce20",
+        "type": "link in",
+        "z": "57949d988172fdbe",
+        "name": "",
+        "links": [
+            "c1a3cc2316ade441"
+        ],
+        "x": 615,
+        "y": 500,
+        "wires": [
+            [
+                "abe15ea31061bb32"
+            ]
+        ]
+    },
+    {
+        "id": "abe15ea31061bb32",
+        "type": "function",
+        "z": "57949d988172fdbe",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 500,
+        "wires": [
+            [
+                "406556ca95de0ef5",
+                "bcb1437e18f4e42c"
+            ]
+        ]
+    },
+    {
+        "id": "bcb1437e18f4e42c",
+        "type": "influxdb out",
+        "z": "57949d988172fdbe",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02hum_cloud",
+        "measurement": "node01_cond",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 1030,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "406556ca95de0ef5",
+        "type": "debug",
+        "z": "57949d988172fdbe",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a4ee2ca87d686884",
+        "type": "inject",
+        "z": "57949d988172fdbe",
+        "name": "Treinar modelo",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 780,
+        "y": 560,
+        "wires": [
+            [
+                "bcb1437e18f4e42c",
+                "406556ca95de0ef5"
+            ]
+        ]
+    },
+    {
+        "id": "88b2b72ad308082c",
+        "type": "ui_gauge",
+        "z": "57949d988172fdbe",
+        "name": "",
+        "group": "c6d86de63e4dc7da",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Plantation condition",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b30000",
+            "#e6e600",
+            "#3acb43"
+        ],
+        "seg1": "Ruim",
+        "seg2": "Bom",
+        "className": "",
+        "x": 990,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "806d86e407de68c7",
+        "type": "inject",
+        "z": "57949d988172fdbe",
+        "name": "Array of decimals",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[1.67,2.98,3.12,4.99,5.50]",
+        "payloadType": "json",
+        "x": 1200,
+        "y": 260,
+        "wires": [
+            [
+                "7dfc84a044bc288c"
+            ]
+        ]
+    },
+    {
+        "id": "7dfc84a044bc288c",
+        "type": "split",
+        "z": "57949d988172fdbe",
+        "name": "Split array",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 1280,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "733daf7efb231c3f",
+        "type": "inject",
+        "z": "1348cbf13aa9875a",
+        "name": "Treinar modelo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "0ae3b0966d4d6921"
+            ]
+        ]
+    },
+    {
+        "id": "0ae3b0966d4d6921",
+        "type": "load dataset",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "datasetFolder": "/home/pi/Desktop/Mestrado_Inatel",
+        "datasetName": "data",
+        "partition": "train.csv",
+        "input": true,
+        "output": true,
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "f5ad4d29e28c0d3c"
+            ],
+            [
+                "ee8f8924ed97a9d7"
+            ]
+        ]
+    },
+    {
+        "id": "a0946f308984cecd",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "751e6ede9077bf1b",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "ee8f8924ed97a9d7",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f5ad4d29e28c0d3c",
+        "type": "k neighbors classifier",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "savePath": "/home/pi/Desktop/Mestrado_Inatel/models",
+        "saveName": "knn",
+        "neighbors": "2",
+        "weights": "uniform",
+        "x": 240,
+        "y": 260,
+        "wires": [
+            [
+                "a0946f308984cecd"
+            ],
+            [
+                "751e6ede9077bf1b"
+            ]
+        ]
+    },
+    {
+        "id": "d2e1e72dae964968",
+        "type": "load dataset",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "datasetFolder": "/home/pi/Desktop/Mestrado_Inatel",
+        "datasetName": "data",
+        "partition": "test.csv",
+        "input": false,
+        "output": true,
+        "x": 710,
+        "y": 140,
+        "wires": [
+            [
+                "58118efb29e76a03"
+            ],
+            [
+                "7d295c7ca5280f78"
+            ]
+        ]
+    },
+    {
+        "id": "58118efb29e76a03",
+        "type": "assessment",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "score": "accuracy_score",
+        "x": 930,
+        "y": 120,
+        "wires": [
+            [
+                "05150ea47ab4f362"
+            ],
+            [
+                "0521bcb66190c7c1"
+            ]
+        ]
+    },
+    {
+        "id": "086e96e636bc63a9",
+        "type": "predictor",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "modelPath": "/home/pi/Desktop/Mestrado_Inatel/models",
+        "modelName": "knn",
+        "x": 920,
+        "y": 280,
+        "wires": [
+            [
+                "456fc1cab4aa5a30",
+                "931c260fed918b04"
+            ],
+            [
+                "229d3cbb3a7f882b"
+            ]
+        ]
+    },
+    {
+        "id": "e7704b776cb96edb",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "456fc1cab4aa5a30",
+        "type": "assessment",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "score": "accuracy_score",
+        "x": 1110,
+        "y": 260,
+        "wires": [
+            [
+                "81822c6de9b1d9c3"
+            ],
+            [
+                "62894f33c6179d09"
+            ]
+        ]
+    },
+    {
+        "id": "229d3cbb3a7f882b",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "0521bcb66190c7c1",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "05150ea47ab4f362",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "7d295c7ca5280f78",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "62894f33c6179d09",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "81822c6de9b1d9c3",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "ceadd385039c02a2",
+        "type": "load dataset",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "datasetFolder": "/home/pi/Desktop/Mestrado_Inatel",
+        "datasetName": "data",
+        "partition": "test.csv",
+        "input": false,
+        "output": true,
+        "x": 910,
+        "y": 240,
+        "wires": [
+            [
+                "456fc1cab4aa5a30"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "931c260fed918b04",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "0fbb5f8265159dc6",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "25eae9a9ac82f5df",
+        "type": "load dataset",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "datasetFolder": "/home/pi/Desktop/Mestrado_Inatel",
+        "datasetName": "data",
+        "partition": "test.csv",
+        "input": true,
+        "output": false,
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "086e96e636bc63a9",
+                "0fbb5f8265159dc6"
+            ],
+            [
+                "e7704b776cb96edb"
+            ]
+        ]
+    },
+    {
+        "id": "9e825713df2cef5c",
+        "type": "inject",
+        "z": "1348cbf13aa9875a",
+        "name": "Testar modelo",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 690,
+        "y": 220,
+        "wires": [
+            [
+                "25eae9a9ac82f5df",
+                "d2e1e72dae964968"
+            ]
+        ]
+    },
+    {
+        "id": "a5b3c0a926ba53f6",
+        "type": "function",
+        "z": "1348cbf13aa9875a",
+        "name": "Criação do vetor",
+        "func": "msg.payload = [[msg.payload.data.humidity,\n                msg.payload.data.temperature,\n                msg.payload.data.heatindex]]\n                \n\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 600,
+        "wires": [
+            [
+                "5b56c4cd8bac400e",
+                "82ad79af226d4565"
+            ]
+        ]
+    },
+    {
+        "id": "1d42a9337e6ae363",
+        "type": "json",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 410,
+        "y": 600,
+        "wires": [
+            [
+                "a5b3c0a926ba53f6"
+            ]
+        ]
+    },
+    {
+        "id": "9df3b720f2a1b274",
+        "type": "mqtt in",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "topic": "topic/node1/json",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 600,
+        "wires": [
+            [
+                "1d42a9337e6ae363"
+            ]
+        ]
+    },
+    {
+        "id": "5b56c4cd8bac400e",
+        "type": "predictor",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "modelPath": "/home/pi/Desktop/Mestrado_Inatel/models",
+        "modelName": "knn",
+        "x": 800,
+        "y": 600,
+        "wires": [
+            [
+                "d152db29edc3c4f3",
+                "0c9295f63b771111"
+            ],
+            [
+                "b604e28a7e333def"
+            ]
+        ]
+    },
+    {
+        "id": "d152db29edc3c4f3",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "result",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "b604e28a7e333def",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "82ad79af226d4565",
+        "type": "assessment",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "score": "confusion_matrix",
+        "x": 810,
+        "y": 720,
+        "wires": [
+            [
+                "2ba726adef7b8a55"
+            ],
+            [
+                "337384f0d47c3232"
+            ]
+        ]
+    },
+    {
+        "id": "337384f0d47c3232",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "2ba726adef7b8a55",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "print",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "0c9295f63b771111",
+        "type": "link out",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "links": [
+            "4b1e4f1c8508d381"
+        ],
+        "x": 955,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "4b1e4f1c8508d381",
+        "type": "link in",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "links": [
+            "0c9295f63b771111"
+        ],
+        "x": 655,
+        "y": 720,
+        "wires": [
+            [
+                "82ad79af226d4565",
+                "801f9a0dba056695"
+            ]
+        ]
+    },
+    {
+        "id": "801f9a0dba056695",
+        "type": "function",
+        "z": "1348cbf13aa9875a",
+        "name": "",
+        "func": "if(msg.payload == 0){\n    msg.payload.ind=\"Condições não favoráveis\";\n}else{\n    msg.payload.ind=\"Condições favoráveis\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 840,
+        "wires": [
+            [
+                "302dfbd06860e439"
+            ]
+        ]
+    },
+    {
+        "id": "302dfbd06860e439",
+        "type": "debug",
+        "z": "1348cbf13aa9875a",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.ind",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "2e9234db599083a1",
+        "type": "inject",
+        "z": "e3e0b84481bac127",
+        "name": "Treinar modelo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 100,
+        "wires": [
+            [
+                "a362d572052134da"
+            ]
+        ]
+    },
+    {
+        "id": "a362d572052134da",
+        "type": "load dataset",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "datasetFolder": "/home/pi/Desktop/Mestrado_Inatel",
+        "datasetName": "data",
+        "partition": "train.csv",
+        "input": true,
+        "output": true,
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "a9aea48ca0d0ef56"
+            ],
+            [
+                "8d75f944082e1673"
+            ]
+        ]
+    },
+    {
+        "id": "9f92184c20c48b6c",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "466ce0b57ecda254",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "8d75f944082e1673",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "48f0f9be16a1c325",
+        "type": "load dataset",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "datasetFolder": "/home/pi/Desktop/Mestrado_Inatel",
+        "datasetName": "data",
+        "partition": "test.csv",
+        "input": true,
+        "output": false,
+        "x": 710,
+        "y": 160,
+        "wires": [
+            [
+                "8da31a8d4ce439f5"
+            ],
+            [
+                "62a25d62ecb4a88a"
+            ]
+        ]
+    },
+    {
+        "id": "8da31a8d4ce439f5",
+        "type": "assessment",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "score": "accuracy_score",
+        "x": 930,
+        "y": 140,
+        "wires": [
+            [
+                "f80336f62d3702bd"
+            ],
+            [
+                "6e32437c123c4b8b"
+            ]
+        ]
+    },
+    {
+        "id": "ebc613c506f91056",
+        "type": "predictor",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "modelPath": "/home/pi/Desktop/Mestrado_Inatel/models",
+        "modelName": "dtc2",
+        "x": 920,
+        "y": 300,
+        "wires": [
+            [
+                "17e6a49930540050"
+            ],
+            [
+                "7c34384d15d40c46",
+                "c337afe2e7c787cd"
+            ]
+        ]
+    },
+    {
+        "id": "a74f4af7595def7f",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "c337afe2e7c787cd",
+        "type": "assessment",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "score": "cohen_kappa_score",
+        "x": 1110,
+        "y": 280,
+        "wires": [
+            [
+                "bb6de50e78e1f9ee"
+            ],
+            [
+                "09691dfcefa45392"
+            ]
+        ]
+    },
+    {
+        "id": "7c34384d15d40c46",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "6e32437c123c4b8b",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f80336f62d3702bd",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "62a25d62ecb4a88a",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "09691dfcefa45392",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "bb6de50e78e1f9ee",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "17e6a49930540050",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3899dc6aa37a48fc",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "79d50df39c35a61f",
+        "type": "load dataset",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "datasetFolder": "/home/pi/Desktop/Mestrado_Inatel",
+        "datasetName": "data",
+        "partition": "test.csv",
+        "input": true,
+        "output": false,
+        "x": 710,
+        "y": 320,
+        "wires": [
+            [
+                "ebc613c506f91056",
+                "3899dc6aa37a48fc"
+            ],
+            [
+                "a74f4af7595def7f"
+            ]
+        ]
+    },
+    {
+        "id": "cd4102316e5bcb87",
+        "type": "inject",
+        "z": "e3e0b84481bac127",
+        "name": "Testar modelo",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 690,
+        "y": 240,
+        "wires": [
+            [
+                "79d50df39c35a61f",
+                "48f0f9be16a1c325"
+            ]
+        ]
+    },
+    {
+        "id": "d66f013a673f725e",
+        "type": "function",
+        "z": "e3e0b84481bac127",
+        "name": "Criação do vetor",
+        "func": "msg.payload = [[msg.payload.data.humidity,\n                msg.payload.data.temperature,\n                msg.payload.data.heatindex]]\n                \n\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 1200,
+        "wires": [
+            [
+                "c5801e4438388565",
+                "455205fa6295488a"
+            ]
+        ]
+    },
+    {
+        "id": "0a56b47c06b4d3f5",
+        "type": "json",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 450,
+        "y": 1200,
+        "wires": [
+            [
+                "d66f013a673f725e"
+            ]
+        ]
+    },
+    {
+        "id": "5806b5e890fb4195",
+        "type": "mqtt in",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "topic": "topic/node2/json",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 1200,
+        "wires": [
+            [
+                "0a56b47c06b4d3f5"
+            ]
+        ]
+    },
+    {
+        "id": "c5801e4438388565",
+        "type": "predictor",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "modelPath": "/home/pi/Desktop/Mestrado_Inatel/models",
+        "modelName": "dtc",
+        "x": 840,
+        "y": 1200,
+        "wires": [
+            [
+                "c72b944facb66bb2",
+                "f2eec80d39cbae4c",
+                "820bfe82489af11f"
+            ],
+            [
+                "7702ba5c85739d3c"
+            ]
+        ]
+    },
+    {
+        "id": "c72b944facb66bb2",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "result",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "7702ba5c85739d3c",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "455205fa6295488a",
+        "type": "assessment",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "score": "confusion_matrix",
+        "x": 850,
+        "y": 1360,
+        "wires": [
+            [
+                "70fa4114423ac03a"
+            ],
+            [
+                "f75a6b2c76a2aa44"
+            ]
+        ]
+    },
+    {
+        "id": "f75a6b2c76a2aa44",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "70fa4114423ac03a",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "print",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "f2eec80d39cbae4c",
+        "type": "link out",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "links": [
+            "d9c6b475afbf9e5d",
+            "8702856c1f4fed49"
+        ],
+        "x": 995,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "d9c6b475afbf9e5d",
+        "type": "link in",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "links": [
+            "f2eec80d39cbae4c"
+        ],
+        "x": 695,
+        "y": 1360,
+        "wires": [
+            [
+                "455205fa6295488a",
+                "e0adeee148de4ddb"
+            ]
+        ]
+    },
+    {
+        "id": "e0adeee148de4ddb",
+        "type": "function",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "func": "if(msg.payload == 0){\n    msg.payload.ind=\"Condições não favoráveis\";\n}else{\n    msg.payload.ind=\"Condições favoráveis\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1500,
+        "wires": [
+            [
+                "ba852aee342bb05e"
+            ]
+        ]
+    },
+    {
+        "id": "ba852aee342bb05e",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "print",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.ind",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "8702856c1f4fed49",
+        "type": "link in",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "links": [
+            "f2eec80d39cbae4c"
+        ],
+        "x": 695,
+        "y": 1560,
+        "wires": [
+            [
+                "52c02bc004cd53ea"
+            ]
+        ]
+    },
+    {
+        "id": "52c02bc004cd53ea",
+        "type": "function",
+        "z": "e3e0b84481bac127",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1560,
+        "wires": [
+            [
+                "66165f3ed34b920b",
+                "546c8aa8ba4143fa"
+            ]
+        ]
+    },
+    {
+        "id": "546c8aa8ba4143fa",
+        "type": "influxdb out",
+        "z": "e3e0b84481bac127",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02hum_cloud",
+        "measurement": "node02_cond",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 1110,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "66165f3ed34b920b",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "670f15922f10ef6d",
+        "type": "inject",
+        "z": "e3e0b84481bac127",
+        "name": "Treinar modelo",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 860,
+        "y": 1620,
+        "wires": [
+            [
+                "546c8aa8ba4143fa",
+                "66165f3ed34b920b"
+            ]
+        ]
+    },
+    {
+        "id": "820bfe82489af11f",
+        "type": "ui_gauge",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "group": "3f0a57f5be7632dd",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Plantation condition",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b30000",
+            "#e6e600",
+            "#3acb43"
+        ],
+        "seg1": "Ruim",
+        "seg2": "Bom",
+        "className": "",
+        "x": 1070,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "81f7b92bc9be26e0",
+        "type": "assessment",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "score": "cohen_kappa_score",
+        "x": 1170,
+        "y": 500,
+        "wires": [
+            [
+                "899893d75a1d1045"
+            ],
+            [
+                "2225914682410183"
+            ]
+        ]
+    },
+    {
+        "id": "2225914682410183",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "899893d75a1d1045",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "a6bb3288e9a09315",
+        "type": "inject",
+        "z": "e3e0b84481bac127",
+        "name": "Testar modelo",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[86.00,26.00,27.89,0]",
+        "payloadType": "json",
+        "x": 990,
+        "y": 500,
+        "wires": [
+            [
+                "81f7b92bc9be26e0"
+            ]
+        ]
+    },
+    {
+        "id": "816e2c0e93edaf16",
+        "type": "range",
+        "z": "e3e0b84481bac127",
+        "minin": "0",
+        "maxin": "10",
+        "minout": "0",
+        "maxout": "10",
+        "action": "scale",
+        "round": true,
+        "property": "payload",
+        "name": "Round value",
+        "x": 1510,
+        "y": 800,
+        "wires": [
+            [
+                "60cab93bd834cd75"
+            ]
+        ]
+    },
+    {
+        "id": "60cab93bd834cd75",
+        "type": "join",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "mode": "auto",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 1650,
+        "y": 800,
+        "wires": [
+            [
+                "a9f92bbece11a71f"
+            ]
+        ]
+    },
+    {
+        "id": "a9f92bbece11a71f",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1710,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "6c4ad2bb15f0a5a4",
+        "type": "function",
+        "z": "e3e0b84481bac127",
+        "name": "Criação do vetor",
+        "func": "msg.payload = [[msg.payload.data.humidity,\n                msg.payload.data.temperature,\n                msg.payload.data.heatindex]]\n                \n\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 620,
+        "wires": [
+            [
+                "d7ed0217f0657b8b",
+                "5d80114cf9bb38be"
+            ]
+        ]
+    },
+    {
+        "id": "a56dfb36bedec437",
+        "type": "json",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 390,
+        "y": 620,
+        "wires": [
+            [
+                "6c4ad2bb15f0a5a4"
+            ]
+        ]
+    },
+    {
+        "id": "4e2bb082748f2bd0",
+        "type": "mqtt in",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "topic": "topic/node1/json",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "aa6b94e454fb47de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 620,
+        "wires": [
+            [
+                "a56dfb36bedec437"
+            ]
+        ]
+    },
+    {
+        "id": "d7ed0217f0657b8b",
+        "type": "predictor",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "modelPath": "/home/pi/Desktop/Mestrado_Inatel/models",
+        "modelName": "dtc2",
+        "x": 780,
+        "y": 620,
+        "wires": [
+            [
+                "15a95ab6308a2e15",
+                "3ae1e7152e5519c5",
+                "a8f98d8c9eabcb24"
+            ],
+            [
+                "ca5f7f3faab9bc20"
+            ]
+        ]
+    },
+    {
+        "id": "15a95ab6308a2e15",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "result",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "ca5f7f3faab9bc20",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "5d80114cf9bb38be",
+        "type": "assessment",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "score": "confusion_matrix",
+        "x": 790,
+        "y": 780,
+        "wires": [
+            [
+                "3da83778b3132b49"
+            ],
+            [
+                "4f99ef901b942240"
+            ]
+        ]
+    },
+    {
+        "id": "4f99ef901b942240",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "error",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "3da83778b3132b49",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "3ae1e7152e5519c5",
+        "type": "link out",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "links": [
+            "5170fd641e42795b",
+            "982b84989f21c7b0"
+        ],
+        "x": 935,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5170fd641e42795b",
+        "type": "link in",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "links": [
+            "3ae1e7152e5519c5"
+        ],
+        "x": 635,
+        "y": 780,
+        "wires": [
+            [
+                "5d80114cf9bb38be",
+                "986ac6e58e4e36ca"
+            ]
+        ]
+    },
+    {
+        "id": "986ac6e58e4e36ca",
+        "type": "function",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "func": "if(msg.payload == 0){\n    msg.payload.ind=\"Condições não favoráveis\";\n}else{\n    msg.payload.ind=\"Condições favoráveis\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 920,
+        "wires": [
+            [
+                "60292b5ef4e802c4"
+            ]
+        ]
+    },
+    {
+        "id": "60292b5ef4e802c4",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "print",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.ind",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "982b84989f21c7b0",
+        "type": "link in",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "links": [
+            "3ae1e7152e5519c5"
+        ],
+        "x": 635,
+        "y": 980,
+        "wires": [
+            [
+                "2a33a13562485778"
+            ]
+        ]
+    },
+    {
+        "id": "2a33a13562485778",
+        "type": "function",
+        "z": "e3e0b84481bac127",
+        "name": "string to number",
+        "func": "msg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 980,
+        "wires": [
+            [
+                "f06a68499f75e70a",
+                "248d65f438aa4ff3"
+            ]
+        ]
+    },
+    {
+        "id": "248d65f438aa4ff3",
+        "type": "influxdb out",
+        "z": "e3e0b84481bac127",
+        "influxdb": "3377c30a0380ce1b",
+        "name": "node02hum_cloud",
+        "measurement": "node01_cond",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "mateusraimundodacruz@gmail.com",
+        "bucket": "AGROFTHINGS",
+        "x": 1050,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "f06a68499f75e70a",
+        "type": "debug",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "9adad11e57254fdb",
+        "type": "inject",
+        "z": "e3e0b84481bac127",
+        "name": "Treinar modelo",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 800,
+        "y": 1040,
+        "wires": [
+            [
+                "248d65f438aa4ff3",
+                "f06a68499f75e70a"
+            ]
+        ]
+    },
+    {
+        "id": "a8f98d8c9eabcb24",
+        "type": "ui_gauge",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "group": "c6d86de63e4dc7da",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Plantation condition",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#b30000",
+            "#e6e600",
+            "#3acb43"
+        ],
+        "seg1": "Ruim",
+        "seg2": "Bom",
+        "className": "",
+        "x": 1010,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "6196362a315f6f4a",
+        "type": "inject",
+        "z": "e3e0b84481bac127",
+        "name": "Array of decimals",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[1.67,2.98,3.12,4.99,5.50]",
+        "payloadType": "json",
+        "x": 1220,
+        "y": 740,
+        "wires": [
+            [
+                "70a25aa65d90ecfc"
+            ]
+        ]
+    },
+    {
+        "id": "70a25aa65d90ecfc",
+        "type": "split",
+        "z": "e3e0b84481bac127",
+        "name": "Split array",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 1300,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9aea48ca0d0ef56",
+        "type": "isolation forest classifier",
+        "z": "e3e0b84481bac127",
+        "name": "",
+        "savePath": "",
+        "saveName": "",
+        "numTrees": "",
+        "contamination": "",
+        "seed": "",
+        "x": 250,
+        "y": 260,
+        "wires": [
+            [
+                "9f92184c20c48b6c"
+            ],
+            [
+                "466ce0b57ecda254"
+            ]
+        ]
+    }
+]
